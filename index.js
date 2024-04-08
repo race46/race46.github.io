@@ -35,8 +35,9 @@ reset.addEventListener("click", resetTimer, false);
 const startTime = localStorage.getItem('startTime')
 
 if (startTime) {
-  bigTime = parseInt(1499 - (Date.now() - startTime) / 1000)
-  if (bigTime != NaN) {
+  time = parseInt(1499 - (Date.now() - startTime) / 1000)
+  if (time != NaN) {
+    bigTime = time
     startTimer()
     counter()
     localStorage.setItem('startTime', startTime)
