@@ -140,7 +140,7 @@ function stopTimer() {
   start.style.display = "none";
   stop.style.display = "none";
   reset.style.display = "block";
-  localStorage.setItem('startTime', undefined)
+  localStorage.removeItem('startTime')
 }
 
 // reset timer
@@ -155,7 +155,7 @@ function resetTimer() {
   start.style.display = "block";
   stop.style.display = "none";
   reset.style.display = "none";
-  localStorage.setItem('startTime', undefined)
+  localStorage.removeItem('startTime')
 }
 
 // ANIMATIONS ================================================ 
