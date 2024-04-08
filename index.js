@@ -36,6 +36,7 @@ const startTime = localStorage.getItem('startTime')
 
 if (startTime){
     bigTime = parseInt(1499 - (Date.now() - startTime) / 1000)
+    if (!(bigTime > 0)) return
     startTimer()
     counter()
     localStorage.setItem('startTime', startTime)
