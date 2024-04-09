@@ -35,7 +35,7 @@ reset.addEventListener("click", resetTimer, false);
 const startTime = localStorage.getItem('startTime')
 
 if (startTime) {
-  const time = parseInt(1499 - (Date.now() - startTime) / 1000)
+  const time = parseInt(1500 - (Date.now() - startTime) / 1000)
   if (time != NaN && time > 0) {
     bigTime = time
     startTimer()
@@ -47,7 +47,9 @@ if (startTime) {
 
 // COUNTER ========================================================
 function counter() {
-  const time = parseInt(1499 - (Date.now() - startTime) / 1000)
+  const startTime = localStorage.getItem('startTime')
+
+  const time = parseInt(1500 - (Date.now() - startTime) / 1000)
   if (time != NaN && time > 0) {
     bigTime = time
   }
