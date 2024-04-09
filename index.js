@@ -47,7 +47,12 @@ if (startTime) {
 
 // COUNTER ========================================================
 function counter() {
-
+  const time = parseInt(1499 - (Date.now() - startTime) / 1000)
+  if (time != NaN && time > 0) {
+    bigTime = time
+  }
+  else
+    bigTime = 0
   // calculate the minutes and seconds from bigTime
   mins = Math.floor(bigTime / 60);
   secs = bigTime - mins * 60;
@@ -114,7 +119,7 @@ function counter() {
 // start timer
 function startTimer() {
   // start timer
-  countdownID = setInterval("counter()", 1000);
+  countdownID = setInterval("counter()", 50);
 
   // show message
   message.innerHTML = "slow and steady wins something";
