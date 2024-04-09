@@ -2,9 +2,9 @@
 
 body       { background:#0D5B85; font-family:"Open Sans"; font-weight:400; padding-top:30px; text-align:center; }
 
-#message    { color:#DDD; font-size:50px; margin-bottom:20px; }
+#message    { color:#DDD; font-size:5vw; margin-bottom:20px; }
 
-#timer     { color:#DDD; font-size:200px; margin-bottom:40px; }
+#timer     { color:#DDD; font-size:20vw; margin-bottom:40px; }
 
 #buttons button       { background:#002852; border:none; color:#DDD; cursor:pointer; padding:15px 30px; margin:0 auto; border-radius:4px; }
 #stop, #reset { display:none; }
